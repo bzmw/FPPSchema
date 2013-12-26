@@ -3,86 +3,514 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Fppschema by bzmwillemsen</title>
+    <title>FPP Schema</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!--[if lt IE 8]>
     <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/bzmwillemsen/FPPSchema">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/bzmwillemsen/FPPSchema/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/bzmwillemsen/FPPSchema/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
+    <div id="header">
+      <nav>
+        <li class="fork"><a href="https://github.com/bzmwillemsen/FPPSchema">View On GitHub</a></li>
+        <!-- <li class="downloads"><a href="https://github.com/bzmwillemsen/FPPSchema/zipball/master">ZIP</a></li>
+        <li class="downloads"><a href="https://github.com/bzmwillemsen/FPPSchema/tarball/master">TAR</a></li>
+        <li class="title">DOWNLOADS</li> -->
+      </nav>
       </div><!-- end header -->
+      <div class="wrapper">
+        <section>
+          <div id="title">
+            <h1>FPP Schema</h1>
+            <p>Schema for First Past the Post (FPP) election results.</p>
+            <hr>
+          </div>
+          <p>
+            This is an election results schema for publishing election results in an open fashion, it is designed for the First Past the Post electoral model.
 
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>Fppschema</h1>
-          <p>Schema for First Past the Post (FPP) election results.</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/bzmwillemsen">bzmwillemsen</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
-
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-46640295-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-  </body>
-</html>
+            The GitHub repository contains files to help you get started, while the gh-pages branch contains the webpage.
+          </p>
+          <h3>Contribution</h3>
+          <p>
+            If you have any suggestions on how to make this schema better PLEASE contribute them either by making a pull request with your changes publish on the gh-pages branch, or by posting suggestions in the GitHub bug tracker.
+          </p>
+          <a name="tables" class="anchor" href="#tables"><span class="octicon octicon-link"></span></a>
+          <h3>Tables</h3>
+          <table class="tables-outline">
+            <thead>
+              <tr>
+                <th>
+                  Name
+                </th>
+                <th>
+                  Details
+                </th>
+              </tr>
+            </thead>
+            <tr>
+              <td>
+                <a href="#candidates">Candidates</a>
+              </td>
+              <td>
+                One or more people who are running in a given jurisidiction in a given election.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#results">Results</a>
+              </td>
+              <td>
+                Vote counts for each candidate in each jurisdiction in each election.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#jurisdictions">Jurisdictions</a>
+              </td>
+              <td>
+                An areas in which a candidate will represent.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#polls">Polls</a>
+              </td>
+              <td>
+                An area contained within a jursdiction which is assigned to a specific polling location.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#elections">Elections</a>
+              </td>
+              <td>
+                One or more elections that are provided.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#election-jursidictions">Election Jurisdictions</a>
+              </td>
+              <td>
+                The jurisdictions which are used in each election.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#affiliations">Affiliations</a>
+              </td>
+              <td>
+                One or more political affiliations that are represented in any election.
+              </td>
+            </tr>
+          </table>
+          <a name="candidates" class="anchor" href="#candidates"><span class="octicon octicon-link"></span></a>
+          <h3>Candidates</h3>
+          <table class="tables-description">
+            <thead>
+              <tr>
+                <th>
+                  Field Name
+                </th>
+                <th>
+                  Required
+                </th>
+                <th>
+                  Details
+                </th>
+              </tr>
+            </thead>
+            <tr>
+              <td>
+                candidate_id
+              </td>
+              <td>
+                <strong>Required, Unique</strong>
+              </td>
+              <td>
+                A unique identifier to represent this candidate.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                candidate_name
+              </td>
+              <td>
+                <strong>Required</strong>
+              </td>
+              <td>
+                The name used by the candidate to register for the election.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                affiliation_id
+              </td>
+              <td>
+                Optional
+              </td>
+              <td>
+                The political party that this candidate is representing. If empty or null the candidate should be regarded as Independent.
+              </td>
+            </tr>
+          </table>
+          <a name="results" class="anchor" href="#results"><span class="octicon octicon-link"></span></a>
+          <h3>Results</h3>
+          <table class="tables-description">
+            <thead>
+              <tr>
+                <th>
+                  Field Name
+                </th>
+                <th>
+                  Required
+                </th>
+                <th>
+                  Details
+                </th>
+              </tr>
+            </thead>
+            <tr>
+              <td>
+                counted_for
+              </td>
+              <td>
+                <strong>Required</strong>
+              </td>
+              <td>
+                The candidate_id representing a candidate <strong>OR</strong> one of: REJECTED_BALLOTS, UNMARKED_BALLOTS, DECLINED_BALLOTS.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                jurisdiction_id
+              </td>
+              <td>
+                <strong>Required</strong>
+              </td>
+              <td>
+                The jurisdiction where these results were collected.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                votes
+              </td>
+              <td>
+                <strong>Required</strong>
+              </td>
+              <td>
+                The amount of votes that were counted.
+              </td>
+            </tr>
+          </table>
+          <a name="jursidictions" class="anchor" href="#jursidictions"><span class="octicon octicon-link"></span></a>
+          <h3>Jurisdictions</h3>
+          <table class="tables-description">
+            <thead>
+              <tr>
+                <th>
+                  Field Name
+                </th>
+                <th>
+                  Required
+                </th>
+                <th>
+                  Details
+                </th>
+              </tr>
+            </thead>
+            <tr>
+              <td>
+                jurisdiction_id
+              </td>
+              <td>
+                <strong>Required, Unique</strong>
+              </td>
+              <td>
+                A unique identifier for this area.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                boundary
+              </td>
+              <td>
+                <strong>Required</strong>
+              </td>
+              <td>
+                A geographical object representing the boundary of the jurisdiction.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                name
+              </td>
+              <td>
+                <strong>Required</strong>
+              </td>
+              <td>
+                The name of the jurisdiction.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                total_registered
+              </td>
+              <td>
+                Optional
+              </td>
+              <td>
+                The total number of registered voters in the jurisdiction.
+              </td>
+            </tr>
+          </table>
+          <a name="polls" class="anchor" href="#polls"><span class="octicon octicon-link"></span></a>
+          <h3>Polls</h3>
+          <table class="tables-description">
+            <thead>
+              <tr>
+                <th>
+                  Field Name
+                </th>
+                <th>
+                  Required
+                </th>
+                <th>
+                  Details
+                </th>
+              </tr>
+            </thead>
+            <tr>
+              <td>
+                jurisdiction_id
+              </td>
+              <td>
+                <strong>Required</strong>
+              </td>
+              <td>
+                The jurisidiction_id of the jurisdiction that this poll is contained within.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                poll_id
+              </td>
+              <td>
+                <strong>Required, Unique</strong>
+              </td>
+              <td>
+                A unique identifier for this polling location.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                boundary
+              </td>
+              <td>
+                <strong>Required</strong>
+              </td>
+              <td>
+                A geographical object representing the boundary of the poll.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                name
+              </td>
+              <td>
+                <strong>Optional</strong>
+              </td>
+              <td>
+                The name of the jurisdiction.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                total_registered
+              </td>
+              <td>
+                Optional
+              </td>
+              <td>
+                The total number of registered voters in the poll.
+              </td>
+            </tr>
+          </table>
+          <a name="elections" class="anchor" href="#elections"><span class="octicon octicon-link"></span></a>
+          <h3>Elections</h3>
+          <table class="tables-description">
+            <thead>
+              <tr>
+                <th>
+                  Field Name
+                </th>
+                <th>
+                  Required
+                </th>
+                <th>
+                  Details
+                </th>
+              </tr>
+            </thead>
+            <tr>
+              <td>
+                election_id
+              </td>
+              <td>
+                <strong>Required, Unique</strong>
+              </td>
+              <td>
+                A unique identifier for the election.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                name
+              </td>
+              <td>
+                <strong>Required</strong>
+              </td>
+              <td>
+                The registered name of the election.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                date
+              </td>
+              <td>
+                <strong>Required</strong>
+              </td>
+              <td>
+                The date that voting was held for the election.
+              </td>
+            </tr>
+          </table>
+          <a name="election-jurisdictions" class="anchor" href="#election-jurisdictions"><span class="octicon octicon-link"></span></a>
+          <h3>Election Jurisdictions</h3>
+          <table class="tables-description">
+            <thead>
+              <tr>
+                <th>
+                  Field Name
+                </th>
+                <th>
+                  Required
+                </th>
+                <th>
+                  Details
+                </th>
+              </tr>
+            </thead>
+            <tr>
+              <td>
+                jurisdiction_id
+              </td>
+              <td>
+                <strong>Required, Unique</strong>
+              </td>
+              <td>
+                A unique identifier for this area.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                election_id
+              </td>
+              <td>
+                <strong>Required</strong>
+              </td>
+              <td>
+                The election_id for which this jurisdiction is used in.
+              </td>
+            </tr>
+          </table>
+          <a name="affiliations" class="anchor" href="#affiliations"><span class="octicon octicon-link"></span></a>
+          <h3>Affiliations</h3>
+          <table class="tables-description">
+            <thead>
+              <tr>
+                <th>
+                  Field Name
+                </th>
+                <th>
+                  Required
+                </th>
+                <th>
+                  Details
+                </th>
+              </tr>
+            </thead>
+            <tr>
+              <td>
+                affiliation_id
+              </td>
+              <td>
+                <strong>Required, Unique</strong>
+              </td>
+              <td>
+                A unique identifier for this political party/affiliation.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                long_name
+              </td>
+              <td>
+                <strong>Required</strong>
+              </td>
+              <td>
+                The full name or registered name of the political party/affiliation.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                short_name
+              </td>
+              <td>
+                Optional
+              </td>
+              <td>
+                The short name of the political party/affiliation.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                abbreviation
+              </td>
+              <td>
+                Optional
+              </td>
+              <td>
+                The abbreviation of the political party/affiliation.
+              </td>
+            </tr>
+          </table>
+          <div id="title">
+            <hr>
+            <span class="credits left">Project maintained by <a href="https://github.com/bzmwillemsen">bzmwillemsen</a></span>
+            <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+          </div>
+        </section>
+      </div>
+      <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+      <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("UA-46640295-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
+      </script>
+    </body>
+  </html>
