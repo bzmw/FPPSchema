@@ -75,15 +75,7 @@
                 <a href="#jurisdictions">Jurisdictions</a>
               </td>
               <td>
-                An areas in which a candidate will represent.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#polls">Polls</a>
-              </td>
-              <td>
-                An area contained within a jursdiction which is assigned to a specific polling location.
+                An areas in which a candidate will represent or where a poll can take place.
               </td>
             </tr>
             <tr>
@@ -92,14 +84,6 @@
               </td>
               <td>
                 One or more elections that are provided.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#election-jursidictions">Election Jurisdictions</a>
-              </td>
-              <td>
-                The jurisdictions which are used in each election.
               </td>
             </tr>
             <tr>
@@ -129,7 +113,7 @@
             </thead>
             <tr>
               <td>
-                candidate_id
+                candidate
               </td>
               <td>
                 <strong>Required, Unique</strong>
@@ -151,7 +135,7 @@
             </tr>
             <tr>
               <td>
-                affiliation_id
+                affiliation
               </td>
               <td>
                 Optional
@@ -185,12 +169,12 @@
                 <strong>Required</strong>
               </td>
               <td>
-                The candidate_id representing a candidate <strong>OR</strong> one of: REJECTED, UNMARKED, DECLINED.
+                The candidate who got these results.
               </td>
             </tr>
             <tr>
               <td>
-                jurisdiction_id
+                jurisdiction
               </td>
               <td>
                 <strong>Required</strong>
@@ -201,7 +185,7 @@
             </tr>
             <tr>
               <td>
-                poll_id
+                poll
               </td>
               <td>
                 <strong>Required</strong>
@@ -240,13 +224,13 @@
             </thead>
             <tr>
               <td>
-                jurisdiction_id
+                jurisdictions
               </td>
               <td>
-                <strong>Required, Unique</strong>
+                <strong>Optional, Unique</strong>
               </td>
               <td>
-                A unique identifier for this area.
+                The jurisdictions contained within this jurisdiction.
               </td>
             </tr>
             <tr>
@@ -283,78 +267,6 @@
               </td>
             </tr>
           </table>
-          <a name="polls" class="anchor" href="#polls"><span class="octicon octicon-link"></span></a>
-          <h3>Polls</h3>
-          <table class="tables-description">
-            <thead>
-              <tr>
-                <th>
-                  Field Name
-                </th>
-                <th>
-                  Required
-                </th>
-                <th>
-                  Details
-                </th>
-              </tr>
-            </thead>
-            <tr>
-              <td>
-                jurisdiction_id
-              </td>
-              <td>
-                <strong>Required</strong>
-              </td>
-              <td>
-                The jurisidiction_id of the jurisdiction that this poll is contained within.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                poll_id
-              </td>
-              <td>
-                <strong>Required, Unique</strong>
-              </td>
-              <td>
-                A unique identifier for this polling location.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                boundary
-              </td>
-              <td>
-                <strong>Required</strong>
-              </td>
-              <td>
-                A geographical object representing the boundary of the poll.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                name
-              </td>
-              <td>
-                <strong>Optional</strong>
-              </td>
-              <td>
-                The name of the jurisdiction.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                total_registered
-              </td>
-              <td>
-                Optional
-              </td>
-              <td>
-                The total number of registered voters in the poll.
-              </td>
-            </tr>
-          </table>
           <a name="elections" class="anchor" href="#elections"><span class="octicon octicon-link"></span></a>
           <h3>Elections</h3>
           <table class="tables-description">
@@ -373,7 +285,7 @@
             </thead>
             <tr>
               <td>
-                election_id
+                election
               </td>
               <td>
                 <strong>Required, Unique</strong>
@@ -405,45 +317,6 @@
               </td>
             </tr>
           </table>
-          <a name="election-jurisdictions" class="anchor" href="#election-jurisdictions"><span class="octicon octicon-link"></span></a>
-          <h3>Election Jurisdictions</h3>
-          <table class="tables-description">
-            <thead>
-              <tr>
-                <th>
-                  Field Name
-                </th>
-                <th>
-                  Required
-                </th>
-                <th>
-                  Details
-                </th>
-              </tr>
-            </thead>
-            <tr>
-              <td>
-                jurisdiction_id
-              </td>
-              <td>
-                <strong>Required, Unique</strong>
-              </td>
-              <td>
-                A unique identifier for this area.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                election_id
-              </td>
-              <td>
-                <strong>Required</strong>
-              </td>
-              <td>
-                The election_id for which this jurisdiction is used in.
-              </td>
-            </tr>
-          </table>
           <a name="affiliations" class="anchor" href="#affiliations"><span class="octicon octicon-link"></span></a>
           <h3>Affiliations</h3>
           <table class="tables-description">
@@ -462,7 +335,7 @@
             </thead>
             <tr>
               <td>
-                affiliation_id
+                affiliation
               </td>
               <td>
                 <strong>Required, Unique</strong>
